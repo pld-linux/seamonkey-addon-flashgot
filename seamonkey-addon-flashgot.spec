@@ -2,6 +2,7 @@
 %define		_realname	flashgot
 
 Summary:	Download helper
+Summary(pl.UTF-8):	Narzędzie pomagające w ściąganiu
 Name:		seamonkey-addon-%{_realname}
 Version:	0.5.97.03
 Release:	0.1
@@ -18,16 +19,26 @@ Requires:	seamonkey >= 1.0
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_chromedir	%{_datadir}/seamonkey/chrome
+%define		_chromedir	%{_datadir}/seamonkey/chrome
 
 %description
 Download one link, selected links or all the links of a page together
 at the maximum speed with a single click, using the most popular,
 lightweight and reliable external download managers. Supported
-download tools are dozens, see http://flashgot.net for details. This
+download tools are dozens, see http://flashgot.net/ for details. This
 extension offers also a Build Gallery functionality which helps to
 collect in a single page serial movies and images scattered on several
 pages, for easy and fast "download all".
+
+%description -l pl.UTF-8
+To rozszerzenie pozwala ściągnąć pojedynczy odnośnik, wybrane
+odnośniki lub wszystkie odnośniki ze strony z maksymalną prędkością za
+pomocą jednego kliknięcia, przy użyciu najbardziej popularnych,
+lekkich i niezawodnych zarządcą ściągania. Obsługiwanych narzędzi jest
+wiele, szczegóły na <http://flashgot.net/>. To rozszerzenie oferuje
+także funkcjonalność budowania galerii pomagające przy zbieraniu na
+jednej stronie wielu filmów i obrazów zgromadzonych z wielu stron przy
+łatwym i szybkim "ściąganiu wszystkiego".
 
 %prep
 %setup -qc
